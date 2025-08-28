@@ -1,0 +1,14 @@
+{
+  "name": "frontend-conecta-barrio",
+  "version": "1.0.0",
+  "description": "Frontend para la plataforma Conecta Barrio",
+  "main": "register.html",
+  "scripts": {
+    "start": "live-server --port=8000 --open=register.html",
+    "dev": "python -m http.server 8000",
+    "server": "http-server -p 8000 -o"
+  },
+  "keywords": ["plataforma", "servicios", "comercios"],
+  "author": "gabi",
+  "license": "MIT"
+}

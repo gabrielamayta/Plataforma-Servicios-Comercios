@@ -1,0 +1,68 @@
+/* Estilos específicos para tarjetas de servicios */
+.service-card {
+    position: relative;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.service-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(135deg, var(--primary), var(--secondary));
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.service-card:hover::before {
+    opacity: 1;
+}
+
+.service-info {
+    padding: 1.5rem;
+}
+
+.service-contact {
+    background: linear-gradient(135deg, var(--light), #E5E9F0);
+    padding: 8px 12px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    display: inline-block;
+    margin: 5px 0;
+    border: 1px solid var(--border-color);
+}
+
+.service-user {
+    color: var(--secondary);
+    font-weight: 500;
+    font-size: 0.9rem;
+}
+
+/* Badge de categoría */
+.service-category {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background: var(--accent);
+    color: white;
+    padding: 4px 10px;
+    border-radius: 15px;
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+
+/* Mejora para imágenes */
+.service-image-container {
+    position: relative;
+    overflow: hidden;
+}
+
+.service-image {
+    transition: transform 0.3s ease;
+}
+
+.service-card:hover .service-image {
+    transform: scale(1.05);
+}
